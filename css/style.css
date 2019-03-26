@@ -9,6 +9,7 @@
 body {
   color: #021535;
   font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -37,7 +38,7 @@ li {
   position: fixed;
 }
 
-.menu-service, .menu-sections, .service-explanation, .service-solutions, .service-numbers {
+.menu-service, .menu-sections, .service-explanation, .service-solutions, .service-numbers, .service-clients, .service-testimonial, .service-footer {
   width: 60%;
   margin: auto;
 }
@@ -153,7 +154,7 @@ li {
 
 /**SERVICE SOLUTIONS**/
 
-.service-solutions-container {
+.service-solutions-container, .service-clients-container, .service-testimonial-container {
   width: 100vw;
   background-color: #EEE;
 }
@@ -198,6 +199,7 @@ li {
   transform: scale(1.01);
   box-shadow: 0 0 30px #DDD;
   transition: 0.3s;
+  z-index: -1;
 }
 
 .row-bottom {
@@ -305,7 +307,9 @@ li {
 /**SERVICE NUMBERS**/
 
 .service-numbers {
+  width: 50%;
   text-align: center;
+  padding: 6% 0;
 }
 
 .numbers {
@@ -313,11 +317,12 @@ li {
   content:"";
   display: table;
   clear: both;
+  padding-top: 5%;
 }
 
 .box {
   width: 25%;
-  padding: 5%;
+  padding: 5% 2%;
   float: left;
 }
 
@@ -329,32 +334,215 @@ li {
   border-bottom: 1px solid #FFF;
  }
 
+/**SERVICE CLIENTS**/
 
+.service-clients, .service-testimonial {
+  content:"";
+  display: table;
+  clear: both;
+  padding: 5% 0;
+}
 
+.clients {
+  width: 20%;
+  float: left;
+  margin-right: 10%;
+}
 
+.clients h1 {
+  font-size: 45px;
+}
 
+.clients p {
+  line-height: 2;
+}
 
+.clients-logos {
+  width: 60%;
+  float: right;
+}
 
+.clients-logos img {
+  width: 20%;
+  padding: 0 50px 50px 0;
+}
 
+/**SERVICE TESTIMONIAL**/
 
+.service-testimonial {
+  padding: 2% 0;
+  position: relative;
+}
 
+.service-testimonial > .explainer {
+  float: left;
+}
 
+.service-testimonial > .explainer > h1 {
+  font-size: 35px;
+}
 
+.service-testimonial > .explainer > p {
+  width: 100%;
+}
 
+.testimonial-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: #ff4476;
+  overflow: hidden;
+  margin-left: auto;
+}
 
+.testimonial-img > img {
+  width: 400px;
+}
 
+/**so che il modo più corretto sarebbe creare una png
+con i cerchi rosa, ma ho voluto fare una prova con
+i simboli e le positions (ho posizionato gli elementi
+aiutandomi con l'inspector)**/
 
+.circles {
+  width: 30%;
+  height: 20%;
+  color: #ff4476;
+  position: absolute;
+  top: 393px;
+  right: 31px;
+}
 
+.circles div {
+  position: absolute;
+}
 
+.circles div:first-child {
+  top: 10px;
+  right: 251px;
+}
 
+.circles div:nth-child(2) {
+  top: 43px;
+  right: 171px;
+}
 
+.circles div:nth-child(3) {
+  top: -17px;
+  right: 131px;
+}
 
+.circles div:last-child {
+  top: 22px;
+  right: 71px;
+}
 
+.circle > ul > li {
+  display: block;
+  padding-bottom: 20px;
+}
 
+/*fine circles*/
 
+/**SERVICE-FOOTER**/
 
+footer {
+  width: 100vw;
+  color: #FFF;
+  background-color: #475c72;
+  content: "";
+  display: table;
+  clear: both;
+}
 
+.service-footer {
+  padding: 5% 0;
+}
 
+.footer-links {
+  width: 100%;
+}
+
+.service-footer li, .service-footer h3 {
+  padding-bottom: 8%;
+}
+
+.service-footer a {
+  color: #e5f7ff;
+}
+
+.service-footer a:hover {
+  color: #b2e7ff;
+}
+
+.footer-col {
+  width: 20%;
+  float: left;
+  margin: 0 2.5%;
+}
+
+.footer-col .btn-white {
+  width: 90%;
+  color: #021535;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: block;
+}
+
+.footer-col .btn-white:hover {
+  color: #021535;
+}
+
+.social li, .footer-languages li, .footer-legal-links li {
+  display: inline-block;
+}
+
+.social a {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.footer-languages {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #e5f7ff;
+  padding-bottom: 4%;
+}
+
+.footer-languages li {
+  padding: 5% 5% 0 0;
+}
+
+.footer-legal {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.footer-logo {
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+
+.footer-logo img {
+  width: 100px;
+  padding: 2.5% 0;
+  display: block;
+}
+
+.footer-logo p {
+  font-size: 12px;
+  padding: 2% 0;
+}
+
+.footer-legal-links {
+  text-align: right;
+}
+
+.footer-legal-links li {
+  padding-right: 5%;
+}
 
 /**BUTTONS**/
 
