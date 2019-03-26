@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  color: #021535;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/**MENU SERVICE*/
+
+.menu-service-container {
+  width: 100vw;
+  height: 70px;
+  line-height: 70px;
+  background-color: #f2f5f9;
+  border-bottom: 1px solid #d0d3d8;
+  position: fixed;
+}
+
+.menu-service, .menu-sections, .service-explanation {
+  width: 60%;
+  margin: auto;
+}
+
+.menu-service > ul:first-child {
+  float: left;
+}
+
+.menu-service > ul:last-child, .menu-sections > ul {
+  float: right;
+}
+
+.menu-service > ul:first-child > li:first-child > a:before, .menu-service > ul:first-child > li:first-child > a:after, .menu-service > ul:last-child > li:first-child:before, .menu-sections > ul > li:not(:nth-child(2)) > a:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 10px;
+}
+
+.menu-service > ul:first-child > li:first-child > a:before {
+  color: #021535;
+  content:"\f7a2";
+}
+
+.menu-service > ul:first-child > li:first-child > a:after, .menu-sections > ul > li:not(:nth-child(2)) > a:after {
+  color: #99b8c6;
+  content:"\f0d7";
+  padding-left: 10px;
+}
+
+.menu-service > ul:first-child > li:last-child {
+  border-left: 2px solid #d0d3d8;
+  padding-left: 10px;
+}
+
+.menu-service > ul:last-child > li:first-child > a {
+  color: #00c2c2;
+}
+
+.menu-service > ul > li {
+  height: 25px;
+  line-height: 25px;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.menu-service > ul:first-child > li > a {
+  padding: 20% 0;
+}
+
+/**MENU SECTIONS**/
+
+.menu-sections-container {
+  width: 100vw;
+  height: 160px;
+  line-height: 90px;
+  background-color: #FFF;
+  padding-top: 70px;
+}
+
+.menu-sections > a > img {
+  width: 100px;
+}
+
+.menu-sections > ul > li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.menu-sections > ul > li > a {
+  height: 100%;
+  font-size: 15px;
+  padding: 30% 0;
+}
+
+/**SERVICE EXPLANATION**/
+
+.service-explanation-container {
+  width: 100vw;
+  color: #FFF;
+  background: linear-gradient(#02b8d1, #016b7a);
+}
+
+.explainer {
+  width: 40%;
+  padding: 10% 0;
+}
+
+.explainer > h1 {
+  font-size: 60px;
+}
+
+.explainer > h1, .explainer > p {
+  padding: 3% 0;
+}
+
+.explainer > p {
+  line-height: 25px;
+}
+
+.explainer > p:last-child {
+  font-size: 12px;
+  width: 40%;
+}
+
+.explainer > a {
+  width: 220px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  display: block;
+  margin-right: auto;
+}
+
+/**BUTTONS**/
+
+.btn-orange-border {
+  color: #ff784f;
+  background-color: #FFF;
+  border: 1px solid #ff784f;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.btn-orange-border:hover {
+  background-color: #ffebe5;
+}
+
+.btn-orange {
+  color: #FFF;
+  background-color: #ff784f;
+  border-radius: 3px;
+  padding: 10px 20px;
+}
+
+.btn-orange:hover {
+  background-color: #fc9779;
+}
+
+.btn-white {
+  background-color: #FFF;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+.btn-white:hover {
+  background-color: #EEE;
+}
