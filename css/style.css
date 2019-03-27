@@ -19,18 +19,16 @@ a {
   text-decoration: none;
 }
 
-h1, h2, p, span {
-  padding-bottom: 3%;
-}
-
-li {
-  list-style: none;
-}
+h1, h2, p, span { padding-bottom: 3%; }
+li { list-style: none; }
 
 /**MENU SERVICE*/
 
-.menu-service-container {
+.menu-service-container, .menu-sections-container, .service-explanation-container, .service-numbers-container, .service-solutions-container, .service-clients-container, .service-testimonial-container, footer {
   width: 100vw;
+}
+
+.menu-service-container {
   height: 70px;
   line-height: 70px;
   background-color: #f2f5f9;
@@ -43,11 +41,11 @@ li {
   margin: auto;
 }
 
-.menu-service > ul:first-child {
+.menu-service > ul:first-child, .service-testimonial > .explainer, .menu-sections > a > img, .row-bottom > .row-divisor, .row-bottom > .row-divisor:last-child, .service-col > .col, .box, .clients, .footer-col, .footer-logo {
   float: left;
 }
 
-.menu-service > ul:last-child, .menu-sections > ul {
+.menu-service > ul:last-child, .menu-sections > ul, .clients-logos {
   float: right;
 }
 
@@ -84,14 +82,11 @@ li {
   padding-right: 10px;
 }
 
-.menu-service > ul:first-child > li > a {
-  padding: 20% 0;
-}
+.menu-service > ul:first-child > li > a { padding: 20% 0; }
 
 /**MENU SECTIONS**/
 
 .menu-sections-container {
-  width: 100vw;
   height: 160px;
   line-height: 90px;
   background-color: #FFF;
@@ -102,7 +97,6 @@ li {
   width: 100px;
   display: block;
   padding: 2.5% 0;
-  float: left;
 }
 
 .menu-sections > ul > li {
@@ -118,10 +112,19 @@ li {
 
 /**SERVICE EXPLANATION**/
 
-.service-explanation-container, .service-numbers-container {
-  width: 100vw;
+.service-explanation-container, .service-numbers-container, footer, .btn-orange {
   color: #FFF;
+}
+
+.service-explanation-container, .service-numbers-container {
   background: linear-gradient(#02b8d1, #016b7a);
+}
+
+.service-explanation {
+  background-image: url("../img/illustration.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .explainer {
@@ -129,23 +132,21 @@ li {
   padding: 10% 0;
 }
 
-.explainer > h1 {
-  font-size: 60px;
-}
-
-.explainer > p {
-  line-height: 25px;
-}
+.explainer > h1 { font-size: 60px; }
+.explainer > p { line-height: 25px; }
 
 .explainer > p:last-child {
   font-size: 12px;
   width: 40%;
 }
 
+.explainer > a, .row-top, .row-divisor > a, .service-col, .service-numbers, .footer-col .btn-white, .footer-languages {
+  text-align: center;
+}
+
 .explainer > a {
   width: 220px;
   font-size: 16px;
-  text-align: center;
   line-height: 40px;
   display: block;
   margin-right: auto;
@@ -155,29 +156,14 @@ li {
 /**SERVICE SOLUTIONS**/
 
 .service-solutions-container, .service-clients-container, .service-testimonial-container {
-  width: 100vw;
   background-color: #EEE;
 }
 
-.service-solutions {
-  padding: 8% 0;
+.service-solutions, .service-numbers, .service-clients, .service-footer {
+  padding: 6% 0;
 }
 
-.service-row, .service-col {
-  width: 80%;
-  margin: auto;
-}
-
-.service-col {
-  content:"";
-  display: table;
-  clear: both;
-  padding-top: 4%;
-}
-
-.row-top {
-  text-align: center;
-}
+.service-col { padding-top: 4%; }
 
 .service-img {
   display: block;
@@ -185,9 +171,7 @@ li {
   padding-bottom: 3%;
 }
 
-.row-top > img {
-  width: 250px;
-}
+.row-top > img { width: 250px; }
 
 .bg-white {
   background-color: #FFF;
@@ -202,13 +186,7 @@ li {
   z-index: -1;
 }
 
-.row-bottom {
-  height: 250px;
-}
-
-.row-bottom > .row-divisor {
-  float: left;
-}
+.row-bottom { height: 250px; }
 
 .row-bottom > .row-divisor:first-child {
   width: 30%;
@@ -217,17 +195,13 @@ li {
 
 .row-bottom > .row-divisor:last-child {
   width: 500px;
-  float: left;
   padding: 20px 60px;
 }
 
-.row-divisor > img, .col-divisor > img {
-  width: 200px;
-}
+.row-divisor > img, .col-divisor > img { width: 200px; }
 
 .row-divisor > a {
   width: 120px;
-  text-align: center;
   margin: auto;
   display: block;
 }
@@ -251,13 +225,7 @@ li {
   padding-right: 20px;
 }
 
-.service-col {
-  text-align: center;
-}
-
-.col-divisor {
-  padding-top: 10%;
-}
+.col-divisor { padding-top: 10%; }
 
 .col-divisor > p {
   width: 80%;
@@ -271,9 +239,7 @@ li {
   margin: auto;
 }
 
-.col-divisor > ul > li{
-  padding-bottom: 2%;
-}
+.col-divisor > ul > li{ padding-bottom: 2%; }
 
 .col-divisor > a {
   width: 150px;
@@ -286,14 +252,8 @@ li {
   content:"";
 }
 
-.service-col > .col {
-  width: 30%;
-  float: left;
-}
-
-.service-col > .col-middle {
-  margin: 0 5%;
-}
+.service-col > .col { width: 30%; }
+.service-col > .col-middle { margin: 0 5%; }
 
 .service-solutions li:before {
   color: #ff784f;
@@ -306,24 +266,16 @@ li {
 
 /**SERVICE NUMBERS**/
 
-.service-numbers {
-  width: 50%;
-  text-align: center;
-  padding: 6% 0;
-}
-
 .numbers {
   width: 100%;
-  content:"";
-  display: table;
-  clear: both;
   padding-top: 5%;
 }
+
+.numbers h1 { padding-top: 10px; }
 
 .box {
   width: 25%;
   padding: 5% 2%;
-  float: left;
 }
 
  .numbers > .box:not(:nth-child(4)):not(:last-child) {
@@ -336,31 +288,20 @@ li {
 
 /**SERVICE CLIENTS**/
 
-.service-clients, .service-testimonial {
+.service-clients, .service-testimonial, .service-col, .numbers, footer {
   content:"";
   display: table;
   clear: both;
-  padding: 5% 0;
 }
 
 .clients {
   width: 20%;
-  float: left;
   margin-right: 10%;
 }
 
-.clients h1 {
-  font-size: 45px;
-}
-
-.clients p {
-  line-height: 2;
-}
-
-.clients-logos {
-  width: 60%;
-  float: right;
-}
+.clients h1 { font-size: 45px; }
+.clients p { line-height: 2; }
+.clients-logos { width: 60%; }
 
 .clients-logos img {
   width: 20%;
@@ -370,21 +311,12 @@ li {
 /**SERVICE TESTIMONIAL**/
 
 .service-testimonial {
-  padding: 2% 0;
   position: relative;
+  padding: 2% 0;
 }
 
-.service-testimonial > .explainer {
-  float: left;
-}
-
-.service-testimonial > .explainer > h1 {
-  font-size: 35px;
-}
-
-.service-testimonial > .explainer > p {
-  width: 100%;
-}
+.service-testimonial > .explainer > h1 { font-size: 35px; }
+.service-testimonial > .explainer > p { width: 100%; }
 
 .testimonial-img {
   width: 400px;
@@ -395,9 +327,7 @@ li {
   margin-left: auto;
 }
 
-.testimonial-img > img {
-  width: 400px;
-}
+.testimonial-img > img { width: 400px; }
 
 /**so che il modo più corretto sarebbe creare una png
 con i cerchi rosa, ma ho voluto fare una prova con
@@ -413,9 +343,7 @@ aiutandomi con l'inspector)**/
   right: 31px;
 }
 
-.circles div {
-  position: absolute;
-}
+.circles div { position: absolute; }
 
 .circles div:first-child {
   top: 10px;
@@ -446,56 +374,30 @@ aiutandomi con l'inspector)**/
 
 /**SERVICE-FOOTER**/
 
-footer {
-  width: 100vw;
-  color: #FFF;
-  background-color: #475c72;
-  content: "";
-  display: table;
-  clear: both;
-}
+footer { background-color: #475c72; }
 
-.service-footer {
-  padding: 5% 0;
-}
-
-.footer-links {
-  width: 100%;
-}
-
-.service-footer li, .service-footer h3 {
-  padding-bottom: 8%;
-}
-
-.service-footer a {
-  color: #e5f7ff;
-}
-
-.service-footer a:hover {
-  color: #b2e7ff;
-}
+.footer-links { width: 100%; }
+.service-footer li, .service-footer h3 { padding-bottom: 8%; }
+.service-footer a { color: #e5f7ff; }
+.service-footer a:hover { color: #b2e7ff; }
 
 .footer-col {
   width: 20%;
-  float: left;
   margin: 0 2.5%;
 }
 
 .footer-col .btn-white {
   width: 90%;
   color: #021535;
-  text-align: center;
   margin-bottom: 20px;
   padding: 10px;
   display: block;
 }
 
-.footer-col .btn-white:hover {
-  color: #021535;
-}
+.footer-col .btn-white:hover { color: #021535; }
 
 .social li, .footer-languages li, .footer-legal-links li {
-  display: inline-block;
+display: inline-block;
 }
 
 .social a {
@@ -505,14 +407,11 @@ footer {
 
 .footer-languages {
   width: 100%;
-  text-align: center;
   border-bottom: 1px solid #e5f7ff;
   padding-bottom: 4%;
 }
 
-.footer-languages li {
-  padding: 5% 5% 0 0;
-}
+.footer-languages li { padding: 5% 5% 0 0; }
 
 .footer-legal {
   width: 100%;
@@ -522,7 +421,6 @@ footer {
 .footer-logo {
   width: 30%;
   height: 100%;
-  float: left;
 }
 
 .footer-logo img {
@@ -536,13 +434,8 @@ footer {
   padding: 2% 0;
 }
 
-.footer-legal-links {
-  text-align: right;
-}
-
-.footer-legal-links li {
-  padding-right: 5%;
-}
+.footer-legal-links { text-align: right; }
+.footer-legal-links li { padding-right: 5%; }
 
 /**BUTTONS**/
 
@@ -560,7 +453,6 @@ footer {
 }
 
 .btn-orange {
-  color: #FFF;
   background-color: #ff784f;
   border-radius: 3px;
   padding: 10px 20px;
